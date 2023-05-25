@@ -2,7 +2,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import { Action, Getter } from "vuex-class";
 
-@Component
+@Component({ name: "the-header" })
 export default class TheHeader extends Vue {
   @Getter title!: string;
   @Getter description!: string;

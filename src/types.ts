@@ -1,6 +1,7 @@
 export interface StateType {
   _title: string;
   _description: string;
+  _products: Product[] | null;
 }
 
 type Price = {
@@ -8,7 +9,7 @@ type Price = {
   current: string;
 };
 
-interface Product {
+export interface Product {
   id: string;
   name: string;
   description: string;
