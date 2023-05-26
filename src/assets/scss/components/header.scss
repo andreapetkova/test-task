@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap");
 
+.header-container {
+  margin: $base-margin * 2 0;
+}
+
 .title {
-  margin: $base-margin 0;
   font-family: "Aoboshi One", serif;
   font-size: $font-size-lg;
 }

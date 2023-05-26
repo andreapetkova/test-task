@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header-container">
     <h1 class="title">{{ title }}</h1>
     <p class="description">{{ description }}</p>
   </div>

@@ -1,7 +1,6 @@
 <template>
-  <div class="card-container">
+  <div class="card-container" :class="{ disabled: !isAvailable }">
     <img :src="require(`@/images/${product.image}`)" />
-
     <!-- // tags for deals -->
     <span class="tag new" v-if="product.new">New</span>
     <span class="tag deal" v-if="product.sale">Meal Deal</span>

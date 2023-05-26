@@ -1,7 +1,30 @@
 .product-list {
-  margin-top: $base-margin * 2;
+  margin: $base-margin * 2 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: $grid-gap;
+}
+
+.search-input {
+  padding: $base-padding;
+  width: 80%;
+  font-size: $base-font-size;
+  border-radius: 0.7rem;
+  border: 1px solid $color-gray;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  input {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

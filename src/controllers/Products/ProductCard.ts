@@ -5,6 +5,7 @@ import { Prop } from "vue-property-decorator";
 import { Product } from "@/types";
 
 @Component({ name: "product-card" })
-export default class TheHeader extends Vue {
+export default class ProductCard extends Vue {
   @Prop() product!: Product;
+  @Prop() isAvailable!: boolean;
 }
