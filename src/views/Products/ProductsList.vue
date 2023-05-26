@@ -9,3 +9,7 @@
 </template>
 
 <script src="@/controllers/Products/ProductsList.ts"></script>
+
+<style lang="scss" scoped>
+@import "@/assets/scss/components/products-list.scss";
+</style>

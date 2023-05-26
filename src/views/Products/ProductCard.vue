@@ -1,11 +1,15 @@
 <template>
   <div class="card-container">
     <img :src="require(`@/images/${product.image}`)" />
-    <!-- // single tag element with props for color and text -->
+
+    <!-- // tags for deals -->
+    <span class="tag new" v-if="product.new">New</span>
+    <span class="tag deal" v-if="product.sale">Meal Deal</span>
     <div class="card-description">
       <h3>{{ product.name }}</h3>
       <p>{{ product.description }}</p>
-      <!-- // if regular price === reduced prise => 1 styling else other styling -->
+
+      <!-- // price -->
       <p class="price" v-if="product.price.regular === product.price.current">
         ${{ product.price.regular }}
       </p>

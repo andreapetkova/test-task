@@ -1,7 +1,9 @@
 .card-container {
-  width: 30%;
+  position: relative;
   border: 1px solid #ccc;
+  flex: 0 1 calc(34% - 30px);
   img {
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -21,5 +23,23 @@
     text-decoration: line-through;
     text-decoration-color: $color-gray;
     color: $color-gray;
+  }
+}
+
+.tag {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  color: $color-white;
+  padding: $base-padding * 0.2 $base-padding * 0.5;
+
+  &.new {
+    background-color: $color-primary;
+  }
+
+  &.deal {
+    position: absolute;
+    top: 65px;
+    background-color: $color-secondary;
   }
 }
