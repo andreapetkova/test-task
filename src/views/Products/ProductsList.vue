@@ -1,17 +1,9 @@
 <template>
   <div>
-    <div class="search-container">
-      <input
-        class="search-input"
-        type="text"
-        v-model="searchString"
-        placeholder="Search ..."
-      />
-      <div class="checkbox">
-        <input type="checkbox" v-model="availableProducts" />
-        <label>Show only available</label>
-      </div>
-    </div>
+    <search-input
+      @toggle-checkbox="toggleCheckbox"
+      @update-search="setSearchString"
+    ></search-input>
     <div class="product-list">
       <product-card
         v-for="product in filteredProducts"

@@ -6,7 +6,7 @@ import ProductsList from "./views/Products/ProductsList.vue";
 @Component({
   components: {
     TheHeader,
-    "product-list": ProductsList,
+    ProductsList,
   },
 })
 export default class App extends Vue {}

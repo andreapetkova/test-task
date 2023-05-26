@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <the-header></the-header>
-    <product-list></product-list>
+    <products-list></products-list>
   </div>
 </template>
 

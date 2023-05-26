@@ -3,8 +3,14 @@ import Component from "vue-class-component";
 
 @Component({ name: "search-input" })
 export default class SearchInput extends Vue {
-  availableProducts = false;
+  isChecked = false;
+  searchString = "";
+
+  updateSearchString() {
+    this.$emit("update-search", this.searchString);
+  }
+
   toggleCheckbox() {
-    this.$emit("toggle-checkbox", this.availableProducts);
+    this.$emit("toggle-checkbox", this.isChecked);
   }
 }
