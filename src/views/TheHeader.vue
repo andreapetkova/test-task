@@ -7,6 +7,6 @@
 
 <script src="../controllers/TheHeader.ts"></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/scss/components/header.scss";
 </style>

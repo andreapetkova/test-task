@@ -1,0 +1,25 @@
+.card-container {
+  width: 30%;
+  border: 1px solid #ccc;
+  img {
+    object-fit: cover;
+  }
+}
+
+.card-description {
+  padding: $base-padding;
+
+  .price {
+    margin-top: $base-margin;
+    font-weight: bold;
+  }
+
+  .price-reduced {
+    margin-left: 0.5rem;
+    font-weight: 200;
+    font-size: $font-size-sm;
+    text-decoration: line-through;
+    text-decoration-color: $color-gray;
+    color: $color-gray;
+  }
+}
